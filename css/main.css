@@ -1,0 +1,525 @@
+/***** BASE STYLES *****/
+body {
+    color: #524f41;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+body p {
+    color: #524f41;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@font-face {
+    font-family: Rodetta Rossie Script;
+    src: url(../Rodetta\ Rossie\ Script.otf);
+  }
+
+/***** GRID *****/
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1200px;
+}
+
+.half-width {
+    float: left;
+    overflow: auto;
+    width: 600px;
+}
+
+.third-width {
+    box-sizing: border-box;
+    float: left;
+    overflow: auto;
+    width: 400px;
+}
+
+.two-third-width {
+    float: left;
+    overflow: auto;
+    width: 800px;
+}
+
+/***** HEADER *****/
+header .full-width {
+    background-color: #e5e3d7;
+    padding: 25px 0;
+}
+
+#logo-header {
+    padding-left: 25px; 
+}
+
+nav ul {
+    margin-left: 25px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 25px;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #c09984;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/***** Mouse over link *****/
+nav ul li a:hover {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** Visited link *****/
+nav a:visited {
+    color: #c09984;
+}
+
+/***** Selected link *****/
+nav a:active {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** BANNER *****/
+#banner .full-width {
+    background: url('../img/banner-image.png') no-repeat;
+    background-color: #a6a998;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin: 0px;
+}
+
+#banner h1 {
+    clear: both;
+    color: #e5e3d7;
+    font-size: 35px;
+    line-height: 35px;
+    padding: 85px 0 85px 25px;
+    text-align: left;
+}
+
+#banner h1 span {
+    font-family: 'Rodetta Rossie Script', script;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+/***** PORTFOLIO *****/
+#portfolio .full-width {
+    background: #e5e3d7;
+    padding: 50px 0;
+}
+ 
+#portfolio h2 {
+    font-family: 'Rodetta Rossie Script', script;
+    font-size: 40px;
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+}
+
+#portfolio .thumbnail {
+    display: inline-block;
+    padding: 25px 18px;
+    position: relative;
+}
+
+#portfolio .thumbnail-overlay {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);   
+}
+
+#portfolio .thumbnail-image {
+    background: #C49075;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+#portfolio .thumbnail:hover .thumbnail-image img {
+    background:#C49075;
+    opacity: 0.2;
+}
+  
+#portfolio .thumbnail:hover .thumbnail-overlay {
+    opacity: 1;
+  }
+
+#portfolio .thumbnail-title {
+    color:#e5e3d7;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#portfolio .thumbnail-category {
+    color: #e5e3d7;
+    font-size: 20px;
+    text-align: center;
+}
+
+/***** Mouse over link *****/
+#portfolio a:hover {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** Visited link *****/
+#portfolio a:visited {
+    color: #e5e3d7;
+    font-weight: bold;
+}
+
+/***** Selected link *****/
+#portfolio a:active {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** ABOUT *****/
+#about .full-width {
+    padding: 50px 0;
+    background-color: #c09984;
+}
+
+#about h2 {
+    color:#e5e3d7;
+    font-family: 'Rodetta Rossie Script', script;
+    font-size: 40px;
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+}
+ 
+#about p {
+    color:#e5e3d7;
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 15px;
+    padding-right: 85px;
+}
+
+#about img {
+    padding: 80px 85px 80px 100px;
+}
+
+/***** CONTACT *****/
+#contact .full-width {
+    background-color:#e5e3d7;
+    padding-bottom: 25px;
+}
+
+#contact h2 {
+    color:#524f41;
+    font-family: 'Rodetta Rossie Script', script;
+    font-size: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#contact h3 {
+    color:#524f41;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact p {
+    color:#524f41;
+    text-align: left;
+}
+
+#contact a {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** Mouse over link *****/
+#contact a:hover {
+    color:#c09984;
+    font-weight: bold;
+}
+
+/***** Visited link *****/
+#contact a:visited {
+    color: #c09984;
+    font-weight: bold;
+}
+
+/***** Selected link *****/
+#contact a:active {
+    color: #524f41;
+    font-weight: bold;
+}
+
+#contact #work-together, #contact #logo-footer, #contact #connect {
+    padding-bottom: 50px;
+    padding-left: 25px;
+}
+
+#contact #work-together {
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+#contact #logo-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+}
+
+#contact #envelope {
+    padding-left: 25px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#contact #envelope .img {
+    padding-top: 5px;
+}
+
+#contact ul {
+    padding-left: 0px;
+}
+
+#contact ul li {
+     display: inline-block;
+     list-style: none;
+     padding-right: 25px;
+     padding-top: 15px;
+}
+
+/***** FOOTER ******/
+footer .full-width {
+    background-color:#C49075;
+    color: #d9c2b0;
+    padding: 25px 0;
+    text-align: center;
+}
+
+/***** THE OTHER GUYS PORTFOLIO PAGE *****/
+#project-overview .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0px;
+}
+
+#project-overview h4 {
+    color: #524f41;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#project-overview span {
+    color: #524f41;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#design-comp .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    padding: 25px 91px 50px 91px;
+    margin: 0px;
+}
+
+#process-images .half-width {
+    background-color:#e5e3d7;
+    margin: 0px;
+}
+
+#process-images p {
+    padding-left: 25px;
+}
+
+#process-images img {
+    width: 550px;
+    height: 800px;
+    object-fit: cover;
+    padding: 0px 25px;
+}
+
+#process-images a {
+    color:#c09984;
+    font-weight: bold;
+}
+
+/***** Mouse over link *****/
+#process-images a:hover {
+    color:#524f41;
+    font-weight: bold;
+}
+
+/***** Visited link *****/
+#process-images a:visited {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** Selected link *****/
+#process-images a:active {
+    color: #524f41;
+    font-weight: bold;
+}
+
+/***** CITY CYCLES PORTFOLIO PAGE *****/
+#project-overview .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0px;
+}
+
+#project-overview h4 {
+    color: #524f41;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#project-overview span {
+    color: #524f41;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#design-comps .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#design-comps #left-column {
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
+#design-comps p {
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+#design-comps #left-column img {
+    width: 580px;
+    height: auto;
+    object-fit: cover;
+    padding-left: 20px;
+}
+
+#design-comps #left-column #homepage-design {
+    margin-bottom: 50px;
+}
+
+#design-comps #right-column {
+    padding-top: 25px;
+}
+
+#design-comps #right-column img {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#design-comps #right-column p {
+    padding-left: 50px;
+}
+
+#journey-map .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 25px 50px; 
+}
+
+/***** SIT CONMIGO PORTFOLIO PAGE *****/
+#project-overview .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    padding-left: 25px;
+    margin: 0px;
+}
+
+#design-comps .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    margin: 0px;
+    padding-bottom: 25px;
+}
+
+#design-comps #desktop {
+    margin-bottom: 50px;
+}
+
+/***** DOROTHY DE LONG PORTFOLIO PAGE *****/
+#project-overview .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 25px;
+    overflow-wrap: break-word;
+    overflow-wrap: normal;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+}
+
+#project-overview h4 {
+    color: #524f41;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#project-overview span {
+    color: #524f41;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#design-comp .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    padding: 25px 91px 50px 91px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+#process-images .full-width {
+    background-color:#e5e3d7;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#process-images p {
+    padding-left: 25px;
+}
